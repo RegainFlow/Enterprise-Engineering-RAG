@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { PiHexagonDuotone, PiBellDuotone, PiUserCircleDuotone } from "react-icons/pi";
 
 const Header: React.FC = () => {
@@ -15,10 +16,24 @@ const Header: React.FC = () => {
         </div>
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-text-secondary">
-          <a href="#" className="hover:text-primary transition-colors">Discover</a>
-          <a href="#" className="text-white">Search</a>
-          <a href="#" className="hover:text-primary transition-colors">Analytics</a>
-          <a href="#" className="hover:text-primary transition-colors">Knowledge Graph</a>
+          <NavLink
+            to="/discover"
+            className={({ isActive }) => isActive ? "text-primary" : "hover:text-primary transition-colors"}
+          >
+            Discover
+          </NavLink>
+          <NavLink
+            to="/analytics"
+            className={({ isActive }) => isActive ? "text-primary" : "hover:text-primary transition-colors"}
+          >
+            Analytics
+          </NavLink>
+          <NavLink
+            to="/knowledge-graph"
+            className={({ isActive }) => isActive ? "text-primary" : "hover:text-primary transition-colors"}
+          >
+            Knowledge Graph
+          </NavLink>
         </nav>
 
         <div className="flex items-center gap-4">

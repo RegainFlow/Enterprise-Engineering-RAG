@@ -3,8 +3,8 @@ export interface Document {
   title: string;
   snippet: string;
   score: number;
-  category: 'Civil' | 'Mechanical' | 'Software' | 'Electrical';
-  fileType: 'PDF' | 'CAD' | 'DOCX' | 'Log';
+  category: 'Civil' | 'Mechanical' | 'Software' | 'Electrical' | 'Chemical' | 'Aerospace' | 'Finance';
+  fileType: 'PDF' | 'CAD' | 'DOCX' | 'Log' | 'XLSX' | 'PPTX';
   date: string;
   tags: string[];
   isSemanticMatch: boolean; // Simulating ELSER v2 retrieval
