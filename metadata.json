@@ -1,0 +1,5 @@
+{
+  "name": "RegainFlow Search",
+  "description": "Production-grade hybrid search engine interface for engineering documents using ELSER V2 aesthetics.",
+  "requestFramePermissions": []
+}
