@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RegainFlow - Intelligent Engineering Search</title>
-    
+    <title>RegainFlow | Intelligent Engineering Search</title>
+
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Montserrat:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Custom Tailwind Configuration to match RegainFlow Design System -->
     <script>
       tailwind.config = {
@@ -24,36 +27,37 @@
                 light: '#00ffff',
                 dark: '#00a89e',
                 alpha15: 'rgba(0, 214, 203, 0.15)',
-                alpha25: 'rgba(0, 214, 203, 0.25)',
+                alpha25: 'rgba(0, 214, 203, 0.25)'
               },
               bg: {
                 primary: '#121213',
                 secondary: '#1a1a1a',
-                tertiary: '#242424',
+                tertiary: '#242424'
               },
               text: {
                 primary: '#ffffff',
                 secondary: '#a6a6a6',
-                tertiary: '#666666',
+                tertiary: '#666666'
               }
             },
             fontFamily: {
               sans: ['"Exo 2"', 'sans-serif'],
               logo: ['"Montserrat"', 'sans-serif'],
-              mono: ['"JetBrains Mono"', 'monospace'],
+              mono: ['"JetBrains Mono"', 'monospace']
             },
             backgroundImage: {
-              'glass-gradient': 'linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)',
+              'glass-gradient':
+                'linear-gradient(145deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)'
             },
             boxShadow: {
               'neon-subtle': '0 0 10px rgba(0, 214, 203, 0.2)',
               'neon-medium': '0 0 20px rgba(0, 214, 203, 0.3)',
               'neon-hover': '0 0 25px rgba(0, 214, 203, 0.4)',
-              'glass': '0 8px 32px rgba(0, 0, 0, 0.3)',
+              glass: '0 8px 32px rgba(0, 0, 0, 0.3)'
             }
           }
         }
-      }
+      };
     </script>
     <style>
       body {
@@ -77,18 +81,18 @@
         background: #00d6cb;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react": "https://aistudiocdn.com/react@^19.2.0",
-    "react/": "https://aistudiocdn.com/react@^19.2.0/",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
-    "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/",
-    "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
-  }
-}
-</script>
-</head>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+          "react-icons/": "https://aistudiocdn.com/react-icons@^5.5.0/",
+          "recharts": "https://aistudiocdn.com/recharts@^3.5.0"
+        }
+      }
+    </script>
+  </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
