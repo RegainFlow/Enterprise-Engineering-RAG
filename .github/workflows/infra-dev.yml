@@ -1,0 +1,60 @@
+name: Terraform Dev
+
+on:
+  push:
+    branches: ["test"]
+  # We'll also allow manual runs (useful for testing)
+  workflow_dispatch:
+
+# Required so GitHub can mint an OIDC token for GCP
+# and so the workflow can read the repo contents.
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  terraform-dev:
+    runs-on: ubuntu-latest
+
+    # All terraform commands will run from infra/dev
+    defaults:
+      run:
+        shell: bash
+        working-directory: infra/dev
+
+    env:
+      # These map directly to your Terraform variables
+      TF_VAR_project_id: ${{ secrets.GCP_PROJECT_ID }}
+      TF_VAR_region: "us-east4" # optional; same as your default
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # Authenticate to Google Cloud using WIF (no JSON key)
+      - id: auth
+        name: Authenticate to Google Cloud
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WIF_PROVIDER }}
+          service_account: ${{ secrets.GCP_TF_SA_EMAIL }}
+
+      # Optional: install gcloud (handy for debugging / extra commands)
+      - name: Setup gcloud SDK
+        uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Init
+        run: terraform init
+
+      - name: Terraform Plan
+        run: terraform plan -input=false -var-file="dev.tfvars"
+
+      # Auto-apply only on push to dev branch
+      - name: Terraform Apply
+        if: github.event_name == 'push' && github.ref == 'refs/heads/dev'
+        run: terraform apply -input=false -auto-approve -var-file="dev.tfvars"

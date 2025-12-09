@@ -4,6 +4,7 @@ import Header from './components/Header';
 import DiscoverView from './features/discover/DiscoverView';
 import AnalyticsView from './features/analytics/AnalyticsView';
 import KnowledgeGraphView from './features/knowledge-graph/KnowledgeGraphView';
+import NotFound from './components/NotFound';
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
             <Route path="/discover" element={<DiscoverView />} />
             <Route path="/analytics" element={<AnalyticsView />} />
             <Route path="/knowledge-graph" element={<KnowledgeGraphView />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>
