@@ -124,4 +124,4 @@ We use **Phosphor Icons Duotone** (`react-icons/pi`).
 - **Don't** hardcode colors or magic numbers.
 - **Don't** mix icon libraries.
 
-Thank you for contributing to RegainFlow!
+Thank you for contributing to Insight Search Engine!
