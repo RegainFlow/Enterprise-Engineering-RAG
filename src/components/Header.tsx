@@ -11,7 +11,7 @@ const Header: React.FC = () => {
             <PiHexagonDuotone size={32} />
           </div>
           <h1 className="font-logo font-bold text-xl tracking-wide text-white">
-            REGAIN<span className="text-primary">FLOW</span>
+            3D PRINT<span className="text-primary">INSIGHT</span>
           </h1>
         </div>
 
@@ -43,7 +43,7 @@ const Header: React.FC = () => {
           <div className="flex items-center gap-2 pl-4 border-l border-white/10">
             <span className="text-right hidden sm:block">
               <div className="text-xs text-text-secondary">Logged in as</div>
-              <div className="text-sm font-semibold text-white">Eng. Admin</div>
+              <div className="text-sm font-semibold text-white">Print Admin</div>
             </span>
             <PiUserCircleDuotone size={36} className="text-primary/80" />
           </div>

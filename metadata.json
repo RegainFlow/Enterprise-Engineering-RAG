@@ -1,5 +1,5 @@
 {
-  "name": "RegainFlow Search",
-  "description": "Production-grade hybrid search engine interface for engineering documents using ELSER V2 aesthetics.",
+  "name": "3D Print Insight",
+  "description": "Knowledge engine for 3D printing troubleshooting and materials.",
   "requestFramePermissions": []
 }

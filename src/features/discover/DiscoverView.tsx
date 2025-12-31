@@ -39,10 +39,10 @@ const DiscoverView: React.FC = () => {
                 {/* Search Hero Section (Inline for Discover View) */}
                 <div className="text-center mb-8">
                     <h2 className="font-logo text-3xl md:text-4xl font-bold mb-4 tracking-tight">
-                        Discover <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Engineering Intelligence</span>
+                        Discover <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Printing Insights</span>
                     </h2>
                     <p className="text-text-secondary text-base mb-6 max-w-2xl mx-auto">
-                        Search across 6M+ technical documents using ELSER v2 semantic retrieval.
+                        Search across 6M+ printing profiles and guides using Neural Search retrieval.
                     </p>
 
                     <GlassCard className="p-2 flex items-center gap-2 max-w-3xl mx-auto border-white/20 shadow-neon-subtle">
@@ -54,7 +54,7 @@ const DiscoverView: React.FC = () => {
                                 type="text"
                                 value={query}
                                 onChange={(e) => setQuery(e.target.value)}
-                                placeholder="Try 'turbine blade stress analysis'..."
+                                placeholder="Try 'PLA layer adhesion'..."
                                 className="w-full bg-transparent border-none outline-none text-white placeholder-text-tertiary font-sans text-lg h-12"
                             />
                         </form>
@@ -84,7 +84,7 @@ const DiscoverView: React.FC = () => {
                         {searched ? (
                             <>Found <span className="text-white font-mono">{results.length}</span> results in <span className="text-white font-mono">0.62s</span></>
                         ) : (
-                            "Ready to search index 'eng-docs-v2'"
+                            "Ready to search index '3d-print-docs-v1'"
                         )}
                     </div>
                     <button className="flex items-center gap-2 text-text-secondary hover:text-white transition-colors text-sm">

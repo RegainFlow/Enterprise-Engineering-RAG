@@ -3,11 +3,11 @@ export interface Document {
   title: string;
   snippet: string;
   score: number;
-  category: 'Civil' | 'Mechanical' | 'Software' | 'Electrical' | 'Chemical' | 'Aerospace' | 'Finance';
-  fileType: 'PDF' | 'CAD' | 'DOCX' | 'Log' | 'XLSX' | 'PPTX';
+  category: 'Material' | 'Printer' | 'Slicer' | 'Troubleshooting' | 'Upgrade';
+  fileType: 'PDF' | 'STL' | 'GCODE' | 'Config' | 'Firmware' | 'Image';
   date: string;
   tags: string[];
-  isSemanticMatch: boolean; // Simulating ELSER v2 retrieval
+  isSemanticMatch: boolean; // Simulating Neural Search
 }
 
 export interface SearchState {

@@ -21,13 +21,11 @@ interface Edge {
 
 // Color mapping for categories
 const CATEGORY_COLORS: Record<string, string> = {
-    'Mechanical': '#00d6cb', // Primary Cyan
-    'Software': '#3b82f6',   // Blue
-    'Civil': '#f59e0b',      // Orange
-    'Electrical': '#ef4444', // Red
-    'Chemical': '#10b981',   // Green
-    'Aerospace': '#8b5cf6',  // Purple
-    'Finance': '#ec4899',    // Pink
+    'Material': '#00d6cb',      // Primary Cyan
+    'Printer': '#3b82f6',       // Blue
+    'Slicer': '#f59e0b',        // Orange
+    'Troubleshooting': '#ef4444', // Red
+    'Upgrade': '#10b981',       // Green
 };
 
 const KnowledgeGraphView: React.FC = () => {
@@ -311,7 +309,7 @@ const KnowledgeGraphView: React.FC = () => {
             <div className="flex justify-between items-end">
                 <div>
                     <h2 className="font-logo text-3xl font-bold mb-2">Knowledge Graph</h2>
-                    <p className="text-text-secondary">Visualize relationships between engineering entities.</p>
+                    <p className="text-text-secondary">Visualize relationships between printing entities.</p>
                 </div>
                 <div className="flex gap-2">
                     <button className="px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 text-sm transition-colors border border-white/10">
@@ -338,7 +336,7 @@ const KnowledgeGraphView: React.FC = () => {
                             </div>
                             <h3 className="text-2xl font-bold text-white mb-2">Interactive Graph Visualization</h3>
                             <p className="text-text-secondary max-w-md text-center mb-8">
-                                Explore semantic relationships between documents, authors, and engineering concepts using our force-directed graph engine.
+                                Explore semantic relationships between documents, authors, and printing concepts using our force-directed graph engine.
                             </p>
                             <div className="flex items-center gap-4 mb-12">
                                 <div className="flex items-center gap-2 text-sm text-text-secondary">

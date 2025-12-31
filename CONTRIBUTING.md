@@ -1,6 +1,6 @@
-# Contributing to RegainFlow
+# Contributing to 3D Printing Insight Engine
 
-Welcome to the RegainFlow project! We're excited to have you contribute. This document provides a comprehensive guide to our project's architecture, design system, and contribution workflow to help us scale effectively.
+Welcome to the 3D Printing Insight Engine project! We're excited to have you contribute. This document provides a comprehensive guide to our project's architecture, design system, and contribution workflow.
 
 ## Table of Contents
 
@@ -13,7 +13,7 @@ Welcome to the RegainFlow project! We're excited to have you contribute. This do
 
 ## Overview
 
-RegainFlow is an enterprise engineering RAG (Retrieval-Augmented Generation) solution designed to streamline workflows and enhance productivity. We aim to build a robust, scalable, and visually stunning application.
+We are building the world's most comprehensive search engine for 3D printing troubleshooting, material data, and slicer profiles. Our goal is to help users solve layer adhesion issues, fix stringing, and find the perfect temperature for any filament.
 
 ---
 

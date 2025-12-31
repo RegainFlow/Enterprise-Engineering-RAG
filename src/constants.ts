@@ -1,6 +1,6 @@
 // Mapping simple constants to simulate backend enums
-export const CATEGORIES = ['Civil', 'Mechanical', 'Software', 'Electrical'];
-export const FILE_TYPES = ['PDF', 'CAD', 'DOCX', 'Log'];
+export const CATEGORIES = ['Material', 'Printer', 'Slicer', 'Troubleshooting'];
+export const FILE_TYPES = ['PDF', 'STL', 'GCODE', 'Config'];
 
 // Design System Constants (matching STYLES.md for JS usage if needed)
 export const COLORS = {

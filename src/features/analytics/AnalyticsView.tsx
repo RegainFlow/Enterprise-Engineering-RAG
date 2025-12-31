@@ -14,12 +14,12 @@ const data = [
 ];
 
 const categoryData = [
-    { name: 'Mechanical', docs: 1200 },
-    { name: 'Software', docs: 900 },
-    { name: 'Civil', docs: 600 },
-    { name: 'Electrical', docs: 800 },
-    { name: 'Chemical', docs: 300 },
-    { name: 'Aerospace', docs: 450 },
+    { name: 'Material', docs: 1200 },
+    { name: 'Printer', docs: 900 },
+    { name: 'Slicer', docs: 600 },
+    { name: 'Troubleshooting', docs: 800 },
+    { name: 'Upgrade', docs: 300 },
+    { name: 'Firmware', docs: 450 },
 ];
 
 const StatCard = ({ title, value, icon: Icon, change }: any) => (
